@@ -1,0 +1,21 @@
+.titulo {
+    text-align: center;
+    border;
+}
+
+.tabela {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+table,
+th,
+td {
+    border: 1px solid;
+        margin-left: auto;
+    margin-right: auto;
+}
+a:hover{color: rgb(226, 43, 43);}
+td:hover{background-color: rgb(145, 98, 199);}
+body{background-color: rgb(218, 174, 174);}
