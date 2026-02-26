@@ -1,0 +1,100 @@
+.titulo{
+    display: flex;
+    justify-content: space-between;
+    border:5px solid;
+    border-color: darkblue;
+    background-color: bisque;
+    text-align: center;
+    align-items: center;
+}
+
+.tit{color: darkgreen;
+
+
+}
+
+body{background-color:lightgray ;}
+
+.texto{
+    text-align: center;
+
+}
+
+.tep{
+    color:indigo;
+    padding-left: 120px;
+    padding-right: 120px;
+    font-size: 20pt;
+}
+
+.faixa{
+    background-color:lightskyblue ;
+    justify-content: space-between;
+    display: flex;
+    text-align: center;
+    height: 38px;
+    color:darkred;
+    padding-left: 550px;
+    padding-right: 550px;
+    padding-top: 30px;
+
+}
+
+.faixa{
+    color: darkred;    
+    text-decoration-color: darkred;
+}
+
+.livro{ 
+    text-align: center;
+
+}
+
+.livm{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 140px; 
+    padding-right: 140px;
+}
+
+.feit{
+    text-align: center;
+}
+
+.feim{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 400px; 
+    padding-right: 400px;
+}
+
+.Contat{
+    text-align: center;
+}
+
+table,th,tr,td{
+    text-align: center;
+    border: 5px;
+    border-style: dashed;
+    border-color: red;
+    width: 250px;
+    margin: auto;
+}
+
+th{color: red;}
+td,th{
+    border: 2px;
+    border-style: solid;
+    border-color: red;
+}
+
+.final{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    background-color: bisque;
+    font-size: 15pt;
+
+}
