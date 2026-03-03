@@ -17,32 +17,41 @@ body{background-color:lightgray ;}
 
 .texto{
     text-align: center;
-
 }
 
 .tep{
     color:indigo;
-    padding-left: 120px;
-    padding-right: 120px;
+    padding-left: 50px;
+    padding-right: 50px;
     font-size: 20pt;
+    font-family: sans-serif;
 }
 
 .faixa{
     background-color:lightskyblue ;
-    justify-content: space-between;
+    justify-content: center;
     display: flex;
     text-align: center;
     height: 38px;
-    color:darkred;
-    padding-left: 550px;
-    padding-right: 550px;
-    padding-top: 30px;
-
+    gap: 50px;
+    /* padding-left: 550px;
+    padding-right: 550px; */
+    padding-top: 30px;  
+}
+.faixa a {
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.faixa{
-    color: darkred;    
-    text-decoration-color: darkred;
+.faixa a:link {
+    color: darkred;   
+}
+
+.faixa a:visited {
+    color: darkred;  
+}
+.faixa a:hover {
+    color: white;
 }
 
 .livro{ 
@@ -90,11 +99,43 @@ td,th{
     border-color: red;
 }
 
+.consult{
+    background-color: yellow;
+    justify-content: center;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+}
+
+.consult ul{
+    padding-left: 40px;
+    list-style-position: outside;
+}
+
+.consult a{
+    text-decoration: none;
+    font-weight: bold;
+    color: darkred;
+}
+
+.consult a:hover{
+    color: white;
+}
+
 .final{
     text-align: center;
     display: flex;
     justify-content: space-between;
     background-color: bisque;
     font-size: 15pt;
+    align-items: center;
+    height: 130px;
+    font-family:Comic Sans MS;
+}
 
+.final img{
+    width: 95px;
+    height: 105px;
+    padding-right: 15px;
 }
