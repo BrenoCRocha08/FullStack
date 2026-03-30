@@ -1,0 +1,98 @@
+/* ==========================================
+   1. RESET BÁSICO (Sempre coloque no topo)
+=========================================== */
+* {
+    margin: 0;           /* Remove as margens externas padrão do navegador */
+    padding: 0;          /* Remove os preenchimentos internos padrão */
+    box-sizing: border-box; /* Garante que bordas e paddings não aumentem o tamanho total definido nas larguras/alturas */
+}
+
+/* ==========================================
+   2. ESTILOS GERAIS (Tipografia e Fundo)
+=========================================== */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte principal e uma reserva (sans-serif) */
+    background-color: #f4f4f4;      /* Cor de fundo da página inteira */
+    color: #333333;                 /* Cor padrão do texto */
+    line-height: 1.6;               /* Espaçamento entre as linhas do texto para melhor leitura */
+}
+
+/* ==========================================
+   3. BOX MODEL (Tamanhos, Espaçamentos e Bordas)
+=========================================== */
+.caixa {
+    width: 200px;             /* Largura fixa da caixa */
+    height: 100px;            /* Altura fixa da caixa */
+    background-color: #fff;   /* Cor de fundo da caixa */
+    
+    /* PADDING: Espaço interno (empurra o conteúdo para longe da borda) */
+    padding: 20px;            
+    
+    /* MARGIN: Espaço externo (empurra outras caixas para longe) */
+    margin: 10px;             /* 10px em todos os lados. Se fosse "10px 20px", seria 10 cima/baixo e 20 lados */
+    
+    /* BORDER: A linha da borda (espessura, estilo, cor) */
+    border: 2px solid #007bff; 
+    
+    /* BORDER-RADIUS: Arredondamento dos cantos */
+    border-radius: 8px;       
+    
+    /* TEXT-ALIGN: Centraliza o texto dentro da caixa */
+    text-align: center;       
+}
+
+/* ==========================================
+   4. FLEXBOX (O melhor para alinhar elementos)
+=========================================== */
+.container-flex {
+    display: flex;            /* Ativa o Flexbox neste container pai */
+    
+    /* flex-direction define a direção: 
+       row = lado a lado (padrão)
+       column = um embaixo do outro */
+    flex-direction: row;      
+    
+    /* justify-content alinha no eixo PRINCIPAL (horizontal se for row):
+       center, space-between (espaço igual entre eles), flex-start (início), flex-end (fim) */
+    justify-content: space-around; 
+    
+    /* align-items alinha no eixo SECUNDÁRIO (vertical se for row):
+       center, stretch (estica), flex-start (topo) */
+    align-items: center;      
+    
+    /* gap: Cria um buraco/espaçamento fixo entre os elementos filhos, substituindo a necessidade de usar margin neles */
+    gap: 15px;                
+    
+    /* Opcional: permite que os itens quebrem linha se a tela ficar pequena */
+    flex-wrap: wrap;          
+}
+
+/* ==========================================
+   5. POSICIONAMENTO (Positioning)
+=========================================== */
+.menu-principal {
+    /* EXEMPLO DE ELEMENTO FIXO: O menu vai ficar grudado no topo mesmo rolando a página */
+    /* position: fixed; */
+    /* top: 0; */
+    /* width: 100%; */
+}
+
+/* ==========================================
+   6. LINKS E ESTILOS DE TEXTO
+=========================================== */
+a {
+    text-decoration: none; /* Tira o sublinhado padrão dos links */
+    color: #007bff;        /* Cor azul do link */
+    font-weight: bold;     /* Deixa o texto em negrito (normal para tirar negrito) */
+}
+
+/* Pseudo-classe :hover = Quando o mouse passa por cima do elemento */
+a:hover {
+    color: #0056b3;        /* Muda a cor quando o mouse está em cima */
+    text-decoration: underline; /* Devolve o sublinhado ao passar o mouse */
+}
+
+/* Lista sem as bolinhas padrão */
+ul {
+    list-style-type: none; 
+}

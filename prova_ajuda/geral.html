@@ -1,0 +1,467 @@
+# Guia rápido de HTML e CSS
+
+## 1) Estrutura básica de uma página HTML
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Olá mundo</h1>
+</body>
+</html>
+```
+
+**O que significa cada parte:**
+
+* `<!DOCTYPE html>`: avisa ao navegador que o documento é HTML5.
+* `<html>`: elemento raiz de toda a página.
+* `lang="pt-BR"`: define o idioma da página.
+* `<head>`: parte com configurações, título, links de CSS e meta tags.
+* `<meta charset="UTF-8">`: permite acentos e caracteres especiais.
+* `<meta name="viewport" content="width=device-width, initial-scale=1.0">`: ajuda a página a ficar responsiva no celular.
+* `<title>`: título da aba do navegador.
+* `<link rel="stylesheet" href="style.css">`: conecta o arquivo CSS.
+* `<body>`: conteúdo visível da página.
+
+---
+
+## 2) Tags HTML mais usadas
+
+### Títulos
+
+* `<h1>` a `<h6>`: títulos, do mais importante ao menos importante.
+
+### Texto
+
+* `<p>`: parágrafo.
+* `<br>`: quebra de linha.
+* `<hr>`: linha horizontal.
+* `<strong>`: texto em destaque forte.
+* `<em>`: texto em destaque com ênfase.
+* `<span>`: trecho pequeno de texto para estilizar com CSS.
+
+### Estrutura/organização
+
+* `<div>`: bloco genérico, muito usado para agrupar elementos.
+* `<section>`: seção de conteúdo.
+* `<article>`: conteúdo independente, como notícia ou postagem.
+* `<header>`: topo da página ou de uma seção.
+* `<nav>`: menu de navegação.
+* `<main>`: conteúdo principal da página.
+* `<footer>`: rodapé.
+* `<aside>`: conteúdo lateral.
+
+### Listas
+
+* `<ul>`: lista não ordenada.
+* `<ol>`: lista ordenada.
+* `<li>`: item da lista.
+
+### Links e imagens
+
+* `<a href="...">`: cria link.
+* `<img src="..." alt="...">`: exibe imagem.
+
+### Formulários
+
+* `<form>`: formulário.
+* `<label>`: texto que identifica um campo.
+* `<input>`: campo de entrada.
+* `<textarea>`: campo grande de texto.
+* `<button>`: botão.
+* `<select>`: caixa de seleção.
+* `<option>`: opção dentro do select.
+
+### Tabelas
+
+* `<table>`: tabela.
+* `<tr>`: linha da tabela.
+* `<th>`: cabeçalho da tabela.
+* `<td>`: célula comum.
+
+---
+
+## 3) Atributos HTML importantes
+
+* `id`: identifica um elemento de forma única.
+* `class`: marca um elemento para receber estilos em grupo.
+* `href`: endereço de um link.
+* `src`: caminho de imagem, vídeo ou arquivo.
+* `alt`: texto alternativo da imagem.
+* `type`: tipo do input ou botão.
+* `name`: nome do campo, útil em formulários.
+* `placeholder`: texto que aparece dentro do campo.
+* `required`: torna o campo obrigatório.
+* `target="_blank"`: abre link em nova aba.
+
+Exemplo:
+
+```html
+<a href="https://example.com" target="_blank">Visitar</a>
+<img src="foto.jpg" alt="Minha foto">
+<input type="text" placeholder="Digite seu nome">
+```
+
+---
+
+## 4) CSS básico
+
+CSS serve para estilizar a página: cores, tamanhos, posição, espaçamento e muito mais.
+
+Exemplo:
+
+```css
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+```
+
+### Como aplicar CSS
+
+* **Inline**: dentro da própria tag HTML com `style="..."`.
+* **Interno**: dentro da tag `<style>` no `<head>`.
+* **Externo**: em um arquivo `.css`, que é o mais usado.
+
+---
+
+## 5) Seletores CSS mais usados
+
+* `*` : seleciona tudo.
+* `body` : seleciona a tag body.
+* `.classe` : seleciona elementos com aquela classe.
+* `#id` : seleciona o elemento com aquele id.
+* `tag` : seleciona uma tag específica.
+* `tag p` : seleciona p dentro de tag.
+* `tag > p` : seleciona p que é filho direto.
+
+Exemplo:
+
+```css
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.caixa {
+  background: white;
+}
+
+#titulo {
+  color: blue;
+}
+```
+
+---
+
+## 6) Propriedades CSS que mais caem
+
+### Texto
+
+* `color`: cor do texto.
+* `font-size`: tamanho da fonte.
+* `font-family`: tipo da fonte.
+* `font-weight`: espessura da fonte.
+* `text-align`: alinhamento do texto.
+* `text-decoration`: decoração do texto, como sublinhado.
+* `line-height`: altura da linha.
+
+### Fundo e borda
+
+* `background-color`: cor de fundo.
+* `background-image`: imagem de fundo.
+* `border`: borda.
+* `border-radius`: arredonda cantos.
+* `box-shadow`: sombra.
+
+### Espaçamento
+
+* `margin`: espaço externo.
+* `padding`: espaço interno.
+
+### Tamanho
+
+* `width`: largura.
+* `height`: altura.
+* `max-width`: largura máxima.
+* `min-height`: altura mínima.
+
+### Exemplo
+
+```css
+.card {
+  width: 300px;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+```
+
+---
+
+## 7) Modelo de caixa (box model)
+
+Todo elemento é uma caixa composta por:
+
+* **content**: conteúdo.
+* **padding**: espaço interno.
+* **border**: borda.
+* **margin**: espaço externo.
+
+Exemplo visual simplificado:
+
+```text
+margin
+  border
+    padding
+      content
+```
+
+---
+
+## 8) Display
+
+Define como o elemento se comporta na tela.
+
+* `block`: ocupa a linha inteira.
+* `inline`: fica na mesma linha.
+* `inline-block`: mistura dos dois.
+* `none`: esconde o elemento.
+
+Exemplo:
+
+```css
+span {
+  display: inline;
+}
+```
+
+---
+
+## 9) Flexbox
+
+Muito usado para alinhar elementos.
+
+### No pai
+
+* `display: flex;`
+* `justify-content`: alinhamento horizontal.
+* `align-items`: alinhamento vertical.
+* `gap`: espaço entre itens.
+* `flex-wrap`: permite quebra de linha.
+
+### Exemplo
+
+```css
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+```
+
+### Valores comuns
+
+* `justify-content: flex-start;`
+* `justify-content: center;`
+* `justify-content: space-between;`
+* `justify-content: space-around;`
+* `justify-content: space-evenly;`
+
+---
+
+## 10) Grid
+
+Usado para organizar em linhas e colunas.
+
+Exemplo:
+
+```css
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+```
+
+### Propriedades comuns
+
+* `grid-template-columns`: define colunas.
+* `grid-template-rows`: define linhas.
+* `gap`: espaço entre os itens.
+
+---
+
+## 11) Responsividade
+
+Faz o site se adaptar a telas diferentes.
+
+### Media query
+
+```css
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+}
+```
+
+### Conceitos importantes
+
+* usar `%`, `rem`, `em`, `vw`, `vh`.
+* evitar larguras fixas demais.
+* usar `max-width: 100%` em imagens.
+
+Exemplo:
+
+```css
+img {
+  max-width: 100%;
+  height: auto;
+}
+```
+
+---
+
+## 12) Posições
+
+* `static`: padrão.
+* `relative`: move em relação à posição normal.
+* `absolute`: sai do fluxo e se posiciona em relação ao pai posicionado.
+* `fixed`: fica preso na tela.
+* `sticky`: mistura de scroll com fixação.
+
+Exemplo:
+
+```css
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+```
+
+---
+
+## 13) Transição e animação simples
+
+* `transition`: suaviza mudanças.
+* `transform`: move, gira ou aumenta elementos.
+
+Exemplo:
+
+```css
+.botao {
+  transition: 0.3s;
+}
+
+.botao:hover {
+  transform: scale(1.05);
+}
+```
+
+---
+
+## 14) Pseudo-classes mais usadas
+
+* `:hover`: quando passa o mouse.
+* `:focus`: quando o elemento está selecionado.
+* `:active`: quando está sendo clicado.
+* `:first-child`: primeiro filho.
+* `:last-child`: último filho.
+
+Exemplo:
+
+```css
+a:hover {
+  color: red;
+}
+```
+
+---
+
+## 15) Cores no CSS
+
+* Nome: `red`, `blue`.
+* Hexadecimal: `#ff0000`.
+* RGB: `rgb(255, 0, 0)`.
+* RGBA: `rgba(255, 0, 0, 0.5)`.
+
+---
+
+## 16) Dicas para copiar site em prova
+
+* observe a estrutura da página: cabeçalho, menu, conteúdo e rodapé.
+* identifique se o layout usa flexbox ou grid.
+* veja cores, fontes, tamanhos e espaçamentos.
+* compare margens e alinhamentos.
+* comece pela estrutura HTML e depois aplique o CSS.
+
+---
+
+## 17) Esqueleto pronto para começar um site
+
+```html
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>Menu</nav>
+  </header>
+
+  <main>
+    <section>
+      <h1>Título</h1>
+      <p>Conteúdo</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Rodapé</p>
+  </footer>
+</body>
+</html>
+```
+
+---
+
+## 18) Resumo rápido
+
+* HTML = estrutura.
+* CSS = estilo.
+* `div` e `span` = blocos genéricos.
+* `class` = grupo de estilos.
+* `id` = elemento único.
+* `margin` = fora.
+* `padding` = dentro.
+* `flexbox` = alinhamento.
+* `grid` = colunas e linhas.
+* `media query` = responsividade.
+
+---
+
+## 19) Mini lembrete
+
+Quando estiver copiando um site:
+
+1. monte o HTML.
+2. estilize o layout.
+3. ajuste espaçamentos.
+4. compare com o modelo.
+5. teste a responsividade.

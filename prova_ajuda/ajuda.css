@@ -1,0 +1,100 @@
+
+/* RESET */
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* TOPO */
+.topo {
+    background-color: #eee;
+    width: 100%;
+}
+
+.topo-conteudo {
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15px 0;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.menu a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+/* TÍTULO */
+.titulo {
+    text-align: center;
+    color: red;
+    font-size: 28px;
+    margin: 30px 0;
+}
+
+/* NOTÍCIAS */
+.noticias {
+    width: 90%;
+    margin: auto;
+
+    display: flex;
+    gap: 20px;
+}
+
+/* ESQUERDA (PRINCIPAL) */
+.esquerda {
+    width: 60%;
+}
+
+.esquerda img {
+    width: 100%;
+}
+
+.texto-principal {
+    background-color: red;
+    color: white;
+    padding: 10px;
+}
+
+/* DIREITA (CARDS) */
+.direita {
+    width: 40%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card img {
+    width: 100%;
+}
+
+/* VÍDEO */
+.video {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    margin-top: 30px;
+}
+
+.box-video {
+    height: 300px;
+    background-color: black;
+    margin-top: 10px;
+}
+
+/* RODAPÉ */
+.rodape {
+    background-color: #ccc;
+    text-align: center;
+    padding: 20px;
+}
