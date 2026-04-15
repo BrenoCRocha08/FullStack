@@ -1,0 +1,16 @@
+
+
+.fundo{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 850px;
+}
+
+#quadrado{
+    background-color: rgb(53, 131, 9);
+}
+
+.body{
+    background-color: rgb(96, 238, 191);
+}

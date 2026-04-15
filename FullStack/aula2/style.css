@@ -1,0 +1,25 @@
+.titul{
+    text-align: center;
+    border: 8px, outset;
+    border-color: rgb(2, 48, 48);
+    background-color: rgba(127, 255, 212, 0.692);
+    width: 1000px;
+    margin: auto;
+}
+
+.titul p{
+    border: 1px, lightseagreen, dashed
+}
+
+.cfei img{
+    text-align: center;
+    align-items: center;
+    justify-content:space-around;
+    margin: 20px;
+    display: flex;
+    align-content: center;
+}
+
+body{
+    background-color: azure;
+}

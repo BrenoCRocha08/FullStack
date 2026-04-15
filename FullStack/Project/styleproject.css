@@ -7,6 +7,8 @@
     margin-left: auto;
     margin-right: auto;
     color: seashell;
+    margin-top: 40px;
+    display: flex;
 }
 
 .tabela {
@@ -14,6 +16,7 @@
     margin-left: auto;
     margin-right: auto;
     color: seashell;
+    margin-top: -180px;
 }
 
 table,
@@ -32,3 +35,11 @@ a:link{
 a:visited{
     color: blanchedalmond;
 }
+
+.gif{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 120px;
+    margin-left: 120px;
+}
+

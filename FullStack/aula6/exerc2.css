@@ -1,0 +1,10 @@
+.fundo{
+    background-color:beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#casinha{
+    background-color: aquamarine;
+}

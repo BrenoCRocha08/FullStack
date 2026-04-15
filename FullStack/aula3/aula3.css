@@ -33,7 +33,7 @@ body{background-color:lightgray ;}
     display: flex;
     text-align: center;
     height: 38px;
-    gap: 50px;
+    gap: 90px;
     /* padding-left: 550px;
     padding-right: 550px; */
     padding-top: 30px;  
@@ -88,7 +88,7 @@ table,th,tr,td{
     border: 5px;
     border-style: dashed;
     border-color: red;
-    width: 250px;
+    width: 350px;
     margin: auto;
 }
 
@@ -102,15 +102,25 @@ td,th{
 .consult{
     background-color: yellow;
     justify-content: center;
-    width: 250px;
+    width: 440px;
+    height: 100px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 10px;
+    padding-left: 0px;
+}
+
+.ht1{
+    padding-left: 80px;
+
+}
+.consult li{
+  
 }
 
 .consult ul{
     padding-left: 40px;
     list-style-position: outside;
+    
 }
 
 .consult a{
